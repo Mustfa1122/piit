@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <h1>CCO-118500 Muhammad Abdul Mustafa Qadri</h1>
+
+    <h1>Q1</h1>
+
+    <script>
+        // Get input from the user
+        var cityName = prompt("Enter the name of the city:");
+
+        // Check if the input is "Karachi" and provide a welcome message accordingly
+        if (cityName.toLowerCase() === "karachi") {
+            alert("Welcome to the city of lights!");
+        } else {
+            alert("Welcome to " + cityName + "!");
+        }
+
+    </script>
+    <h1>Q2</h1>
+    <script>
+        // Get input from the user
+        var gender = prompt("Enter your gender (male/female):");
+
+        // Check the gender and provide a morning greeting accordingly
+        if (gender.toLowerCase() === "male") {
+            alert("Good Morning Sir.");
+        } else if (gender.toLowerCase() === "female") {
+            alert("Good Morning Ma'am.");
+        } else {
+            alert("Good Morning!");
+        }
+
+    </script>
+    <h1>Q3</h1>
+    <script>
+        // Get input from the user
+        var signalColor = prompt("Enter the color of the road traffic signal (red/yellow/green):");
+
+        // Check the signal color and display the corresponding message
+        switch (signalColor.toLowerCase()) {
+            case "red":
+                alert("Must Stop");
+                break;
+            case "yellow":
+                alert("Ready to move");
+                break;
+            case "green":
+                alert("Move now");
+                break;
+            default:
+                alert("Invalid signal color");
+        }
+
+    </script>
+    <h1>Q4</h1>
+    <script>
+        // Get input from the user
+        var remainingFuel = parseFloat(prompt("Enter the remaining fuel in your car (in litres):"));
+
+        // Check if the remaining fuel is less than 0.25 litres and display the message accordingly
+        if (remainingFuel < 0.25) {
+            alert("Please refill the fuel in your car");
+        } else {
+            alert("You have enough fuel. Drive safely!");
+        }
+
+    </script>
+    <h1>Q5</h1>
+    <h2>a.</h2>
+    <script>
+        var a = 4;
+        if (++a === 5) {
+            alert("given condition for variable a is true");
+        }
+
+    </script>
+    <h2>b.</h2>
+    <script>
+        var b = 82;
+if (b++ === 83) {
+    alert("given condition for variable b is true");
+}
+
+    </script>
+    <h2>c.</h2>
+    <script>
+        var c = 12;
+if (c++ === 13) {
+    alert("condition 1 is true");
+}
+if (c === 13) {
+    alert("condition 2 is true");
+}
+if (++c < 14) {
+    alert("condition 3 is true");
+}
+if (c === 14) {
+    alert("condition 4 is true");
+}
+
+    </script>
+    <h2>d.</h2>
+    <script>
+        var materialCost = 20000;
+var laborCost = 2000;
+var totalCost = materialCost + laborCost;
+if (totalCost === laborCost + materialCost) {
+    alert("The cost equals");
+}
+
+    </script>
+    <h2>e.</h2>
+    <script>
+        if (true) {
+    alert("True");
+}
+if (false) {
+    alert("False");
+}
+
+    </script>
+    <h2>f.</h2>
+    <script>
+        if ("car" < "cat") {
+    alert("car is smaller than cat");
+}
+
+    </script>
+    <h1>Q6</h1>
+    <script>
+        // Get input from the user
+var subject1Marks = parseFloat(prompt("Enter marks obtained in Subject 1:"));
+var subject2Marks = parseFloat(prompt("Enter marks obtained in Subject 2:"));
+var subject3Marks = parseFloat(prompt("Enter marks obtained in Subject 3:"));
+var totalMarks = parseFloat(prompt("Enter total marks for the subjects:"));
+
+// Calculate the total marks obtained
+var totalObtainedMarks = subject1Marks + subject2Marks + subject3Marks;
+
+// Calculate the percentage
+var percentage = (totalObtainedMarks / totalMarks) * 100;
+
+// Determine the grade based on the percentage
+var grade;
+if (percentage >= 90) {
+    grade = 'A+';
+} else if (percentage >= 80) {
+    grade = 'A';
+} else if (percentage >= 70) {
+    grade = 'B';
+} else if (percentage >= 60) {
+    grade = 'C';
+} else if (percentage >= 50) {
+    grade = 'D';
+} else {
+    grade = 'F';
+}
+
+// Display the result
+console.log("Total Marks: " + totalMarks);
+console.log("Marks Obtained: " + totalObtainedMarks);
+console.log("Percentage: " + percentage.toFixed(2) + "%");
+console.log("Grade: " + grade);
+
+// Display remarks based on grade
+switch (grade) {
+    case 'A+':
+    case 'A':
+        console.log("Remarks: Excellent!");
+        break;
+    case 'B':
+        console.log("Remarks: Good!");
+        break;
+    case 'C':
+        console.log("Remarks: Satisfactory.");
+        break;
+    case 'D':
+        console.log("Remarks: Needs Improvement.");
+        break;
+    case 'F':
+        console.log("Remarks: Fail. Work Harder.");
+        break;
+    default:
+        console.log("Invalid grade.");
+}
+
+    </script>
+    <h1>Q7</h1>
+    <script>
+        // Generate a secret number between 1 and 10
+var secretNumber = Math.floor(Math.random() * 10) + 1;
+
+// Prompt user to guess the secret number
+var userGuess = parseInt(prompt("Guess the secret number (between 1 and 10):"));
+
+// Check if the user's guess is correct or close enough
+if (userGuess === secretNumber) {
+    console.log("Bingo! Correct answer.");
+} else if (userGuess === secretNumber + 1 || userGuess === secretNumber - 1) {
+    console.log("Close enough to the correct answer.");
+} else {
+    console.log("Sorry, incorrect guess. The correct answer was " + secretNumber + ".");
+}
+
+    </script>
+    <h1>Q8</h1>
+    <script>
+        // Prompt user to enter a number
+var userNumber = parseInt(prompt("Enter a number:"));
+
+// Check if the number is divisible by 3
+if (userNumber % 3 === 0) {
+    console.log(userNumber + " is divisible by 3. It satisfies the condition.");
+    alert(userNumber + " is divisible by 3. It satisfies the condition.");
+} else {
+    console.log(userNumber + " is not divisible by 3. It does not satisfy the condition.");
+    alert(userNumber + " is not divisible by 3. It does not satisfy the condition.");
+}
+
+    </script>
+    <h1>Q9</h1>
+    <script>
+        // Prompt user to enter a number
+var userNumber = parseInt(prompt("Enter a number:"));
+
+// Check if the number is even or odd
+if (userNumber % 2 === 0) {
+    console.log(userNumber + " is an even number.");
+    alert(userNumber + " is an even number.");
+} else {
+    console.log(userNumber + " is an odd number.");
+    alert(userNumber + " is an odd number.");
+}
+
+    </script>
+    <h1>Q10</h1>
+    <script>
+        // Prompt user to enter the temperature
+var temperature = parseFloat(prompt("Enter the temperature in Celsius:"));
+
+// Check the temperature and display a message accordingly
+if (temperature > 40) {
+    console.log("It is too hot outside.");
+    alert("It is too hot outside.");
+} else if (temperature > 30) {
+    console.log("The Weather today is Normal.");
+    alert("The Weather today is Normal.");
+} else if (temperature > 20) {
+    console.log("Today’s Weather is cool.");
+    alert("Today’s Weather is cool.");
+} else if (temperature > 10) {
+    console.log("OMG! Today’s weather is so Cool.");
+    alert("OMG! Today’s weather is so Cool.");
+} else {
+    console.log("Temperature is too low for the provided criteria.");
+    alert("Temperature is too low for the provided criteria.");
+}
+
+    </script>
+    <h1>Q 11</h1>
+    <script>
+        // Prompt user to enter the first number
+var firstNumber = parseFloat(prompt("Enter the first number:"));
+
+// Prompt user to enter the second number
+var secondNumber = parseFloat(prompt("Enter the second number:"));
+
+// Prompt user to enter the operation (+, -, *, /, %)
+var operation = prompt("Enter the operation (+, -, *, /, %):");
+
+// Perform the calculation based on the operation
+var result;
+
+if (isNaN(firstNumber) || isNaN(secondNumber)) {
+    result = "Invalid input. Please enter valid numbers.";
+} else {
+    if (operation === '+') {
+        result = firstNumber + secondNumber;
+    } else if (operation === '-') {
+        result = firstNumber - secondNumber;
+    } else if (operation === '*') {
+        result = firstNumber * secondNumber;
+    } else if (operation === '/') {
+        if (secondNumber !== 0) {
+            result = firstNumber / secondNumber;
+        } else {
+            result = "Division by zero is not allowed.";
+        }
+    } else if (operation === '%') {
+        result = firstNumber % secondNumber;
+    } else {
+        result = "Invalid operation. Please enter a valid operation.";
+    }
+}
+
+// Display the result to the user
+console.log("Result: " + result);
+alert("Result: " + result);
+
+    </script>
+
+</body>
+
+</html>
